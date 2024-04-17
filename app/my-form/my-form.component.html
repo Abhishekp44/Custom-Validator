@@ -1,0 +1,7 @@
+<form [formGroup]="myForm">
+    <input formControlName="myInput">
+    <div *ngIf="myForm.get('myInput').hasError('customError')">
+      Custom validation error!
+    </div>
+  </form>
+  
